@@ -1,0 +1,13 @@
+.btn-primary {
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto; 
+    text-align: center; 
+    margin-top: 50px;
+    transition: transform 0.3s ease; 
+}
+
+
+.btn-primary:hover {
+    transform: scale(1.1); 
+}

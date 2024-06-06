@@ -1,0 +1,200 @@
+body {
+    background-image: url("img/fondo1.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+label {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 0;
+  }
+}
+
+
+
+.linea1 {
+    border: none;
+    height: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 7px 13px -3px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    margin: 22px;
+    padding: 10px;
+    width: 100vw; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -20px;
+    z-index: -1;
+    margin-left: 0px;
+    animation: gradiente1 3s infinite, destello 1.5s infinite; /
+}
+
+
+
+.linea2 {
+    border: none;
+    padding: 29px;
+    height: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 7px 13px -3px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    position: relative;
+    width: 100vw; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 75px;
+    z-index: 1;
+    animation: gradiente2 3s infinite, destello 1.5s infinite; /
+}
+
+@keyframes gradiente2 {
+    0% {
+        background-position: -200% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.formulario-container {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.formulario-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formulario-header h2 {
+    margin: 0;
+    color: #333;
+}
+.btn-primary, .btn-success {
+    background: #000000;
+    border: none;
+}
+.btn-primary:hover, .btn-success:hover {
+    background: #000000;
+}
+.input-group-text {
+    background: #fff;
+    border-right: 0;
+}
+.form-control {
+    border-left: 0;
+}
+
+.texto {
+    font-weight: bold;
+    color: white;
+    margin-top: 2px;
+    transition: transform 0.3s; 
+}
+
+.texto:hover {
+    transform: scale(1.1); 
+}
+
+@media screen and (max-width: 375px) {
+    .formulario-container {
+        padding: 10px; 
+    }
+}
+
+
+.bg-dark {
+    width: 90%; 
+    max-width: 375px; 
+    margin: 0 auto; 
+    border-radius: 5%;
+    margin-top: -20px;
+    padding: 10px; 
+}
+
+
+
+.texto-total {
+    margin-top: -20px;
+}
+
+.form-relleno {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.formulario {
+    text-align: center;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#password,#email,#confirmPassword {
+    text-align: center;
+}
+
+#email, #password, #confirmPassword, #input-direccion, #input-paginaWeb {
+    transition: transform 0.3s ease;
+}
+
+#email:focus, #password:focus, #confirmPassword:focus, #input-direccion:focus, #input-paginaWeb:focus {
+    transform: scale(1.050); 
+}
+
+.datos {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 2px;
+    transition: transform 0.3s; 
+    margin-left: 20px;
+    position: relative;
+
+}
+
+.datos:hover {
+    transform: scale(1.1);
+}
+
+.direccion {
+    margin-left: 40px;
+}
+
+.custom-width {
+    width: 100%; 
+    max-width: 400px; 
+}
+.move-right {
+    margin-left: 20px; 
+}
+
+.volver-formulario {
+    margin-left: 200px;
+}
